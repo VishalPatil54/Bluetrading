@@ -1,0 +1,378 @@
+/* Responsive breakpoints
+*/
+
+/* For min*/
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {  }
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { }
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { }
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { }
+
+
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {  
+    .nav-style {
+        background-color: #0864B1;
+        padding-top: 44px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .jumbotronheadstyle {
+        font-size: 38px;
+        padding-top: 0px;
+    }
+
+    #jumbotronIMG {
+        background: url(../images/jumbotron.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 400px;
+    }
+
+    .jumbotroncontentstyle {
+        font-size: 17px;
+    }
+
+    .contenthr {
+        height: 5px;
+        width: 50%;
+        text-align: center;
+        background: #676767;
+    }
+
+    .contentaboutus {
+        color: #676767;
+        text-align: center;
+        font-size: 23px;
+        margin: 10px;
+        line-height: 50px;
+    }
+
+    .abtuspad {
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+
+    .feature {
+        height: 170px;
+        width: 170px;
+        background-color: #0864B1;
+        display: inline-block;
+        margin-left: 27%;
+        margin-top: 30px;
+    }
+    .featurepad {
+         padding-top: 0px; 
+    }
+
+    .latestnewstyling {
+        padding-top: 50px;
+        margin-left: 18px;
+    }
+
+    .testimonial {
+        background-color: #fff;
+        margin-left: 48px;
+        width: 70%;
+    }
+
+    .newsletterhead {
+        font-size: 35px;
+        color: #fff;
+        line-height: 40px;
+        font-weight: bold;
+    }
+
+    .newsletterbutton {
+        margin-top: 15px;
+        margin-left: 50px;
+        height: 70px;
+        width: 160px;
+        color: #fff;
+        background-color: #0864B1;
+        border: 2px solid white;
+        font-size: 20px;
+    }
+    .inputnewsletter {
+        margin-top: 0px;
+        width: 300px;
+        height: 50px;
+        margin-left: 0px;
+    }
+
+    .btnreset {
+        background-color: #F5F5F5;
+        border: #F5F5F5;
+        color: #0864B1;
+        font-size: 20px;
+        font-weight: bold;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+    .formhead {
+        color: #0864B1;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .contactusinput {
+        height: 40px;
+        box-shadow: #676767;
+    }
+
+    .footeraddress {
+        font-size: 15px;
+        color: #fff;
+        padding-top: 20px;
+        padding-left: 80px;
+    }
+
+    .footercopy {
+        font-size: 17px;
+        color: #fff;
+        padding-left: 0px;
+        text-align: center;
+    }
+
+    .footerConnected {
+        color: #fff;
+        font-weight: bold;
+        font-size: 20px;
+        padding-left: 80px;
+        /* float: right; */
+        padding-right: 40px;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .madeby {
+        font-weight: bold;
+        font-size: 17px;
+        color: #fff;
+        float: right;
+        text-align: center;
+        padding-right: 0px; 
+    }
+
+    .url {
+        color: #fff;
+        font-size: 15px;
+        float: right;
+        padding-right: 0px;
+        text-align: center;
+    }
+
+    .footerSM {
+        color: #fff;
+        float: right;
+        font-size: 40px;
+        margin: 5px;
+    }
+
+    .footerSM1 {
+        color: #fff;
+        float: right;
+        font-size: 40px;
+        margin: 5px;
+        padding-right: 0px; 
+    }
+}
+
+/* Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) { 
+
+
+}
+
+/* Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) { 
+    #jumbotronIMG {
+        background: url(../images/jumbotron.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 364px;
+        height: 389px;
+        float: right;
+        margin-top: 100px;
+    }
+
+   /* .inputnewsletter {
+        margin-top: 80px;
+        width: 300px;
+        height: 70px;
+        margin-left: 50px;
+    }
+
+    .newsletterbutton {
+        margin-top: 15px;
+        margin-left: 100px;
+        height: 70px;
+        width: 200px;
+        color: #fff;
+        background-color: #0864B1;
+        border: 2px solid white;
+        font-size: 25px;
+    }*/
+
+}
+
+/* Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) { 
+   /* .inputnewsletter {
+        margin-top: 80px;
+        width: 400px;
+        height: 70px;
+        margin-left: 50px;
+    }*/
+
+    /*.newsletterbutton {
+        margin-top: 15px;
+        margin-left: 100px;
+        height: 70px;
+        width: 300px;
+        color: #fff;
+        background-color: #0864B1;
+        border: 2px solid white;
+        font-size: 30px;
+        padding: 10px;
+    }*/
+ }
+
+/* Extra large devices (large desktops)*/
+/* No media query since the extra-large breakpoint has no upper bound on its width*/
+
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {  }
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .abtustile{
+        border-right: 1px solid rgb(255, 255, 255);
+    }
+
+    .btnreset {
+        background-color: #F5F5F5;
+        border: #F5F5F5;
+        color: #0864B1;
+        font-size: 20px;
+        font-weight: bold;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-left: 0px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .footerSM1 {
+        color: #fff;
+        float: right;
+        font-size: 40px;
+        margin: 10px;
+        padding-right: 0px;
+    }
+
+    .testimonial {
+        background-color: #fff;
+        margin-left: 80px;
+        width: 70%;
+    }
+ }
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .inputnewsletter {
+        margin-top: 80px;
+        width: 300px;
+        height: 70px;
+        margin-left: 50px;
+    } 
+
+    .newsletterbutton {
+        margin-top: 15px;
+        margin-left: 100px;
+        height: 70px;
+        width: 250px;
+        color: #fff;
+        background-color: #0864B1;
+        border: 2px solid white;
+        font-size: 30px;
+        padding: 10px;
+    }
+
+    .btnreset {
+        background-color: #F5F5F5;
+        border: #F5F5F5;
+        color: #0864B1;
+        font-size: 20px;
+        font-weight: bold;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-left: 0px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .footerSM1 {
+        color: #fff;
+        float: right;
+        font-size: 40px;
+        margin: 10px;
+        padding-right: 0px;
+    }
+
+    .testimonial {
+        background-color: #fff;
+        margin-left: 110px;
+        width: 70%;
+    }
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .inputnewsletter {
+        margin-top: 80px;
+        width: 400px;
+        height: 70px;
+        margin-left: 50px;
+    }
+
+    .newsletterbutton {
+        margin-top: 15px;
+        margin-left: 100px;
+        height: 70px;
+        width: 300px;
+        color: #fff;
+        background-color: #0864B1;
+        border: 2px solid white;
+        font-size: 30px;
+        padding: 10px;
+    }
+
+    .btnreset {
+        background-color: #F5F5F5;
+        border: #F5F5F5;
+        color: #0864B1;
+        font-size: 20px;
+        font-weight: bold;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-left: 350px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+  }
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {  }

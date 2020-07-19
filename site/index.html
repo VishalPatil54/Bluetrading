@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+
+    <title>Landing Page</title>
+
+    <script src="https://kit.fontawesome.com/2d5a7f1b8e.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      function validateform(){
+        var form = document.getElementById("usrform");
+        var firstname = document.getElementById("first-name"); 
+        var lname = document.getElementById("last-name");
+        var sub = document.getElementById("subject");
+        var msg = document.getElementById("message");              
+        if (firstname.value.trim() == "")                                  
+          { 
+            firstname.style.border = "solid 3px red" 
+            document.getElementById("invalidfname")
+            .style.visibility = "visible";
+            return false; 
+          } 
+
+        else if(lname.value.trim()=="")
+        {
+            lname.style.border = "solid 3px red" 
+            document.getElementById("invalidlname")
+            .style.visibility = "visible";
+            return false;
+        }
+        else if(sub.value.trim()=="")
+        {
+            sub.style.border = "solid 3px red" 
+            document.getElementById("invalidsubject")
+            .style.visibility = "visible";
+            return false;
+        }
+        else if(msg.value.trim()=="")
+        {
+            msg.style.border = "solid 3px red" 
+            document.getElementById("invalidmessage")
+            .style.visibility = "visible";
+            return false;
+        }
+        else {
+          return true;
+        } 
+      }
+    </script>
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg nav-style navbar-dark fixed-top">
+        <a class="navbar-brand" href="#" class="navbrandstyle" style="font-size: 30px; font-family:'Biko Bold';font-weight:normal;">BlueTrading</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#aboutus" style="font-size: 20px;">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#features" style="font-size: 20px;">Features</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contactus" style="font-size: 20px;">Conatct</a>
+              </li>
+          </ul>
+        </div>
+      </nav><!--End of navigation bar-->
+      <div class="jumbotron jumbotron-fluid jumbotron-style">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="jumbotronheadstyle">Invest in the Future <br> of Humanity</p>
+                    <br><br>
+                    <p class="jumbotroncontentstyle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,</p>
+                </div>
+                <div class="col-md-6">
+                    <div id="jumbotronIMG" class="img-fluid"></div>
+                </div>
+            </div>
+        </div>
+      </div><!--End of jumbotron-->
+      <div id=aboutus>
+        <div class="container" style="padding-top: 50px;">
+            <p class="contenthead">About Us</p>
+            <hr class="contenthr">
+            <p class="contentaboutus">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est</p>
+            <div class="row abtuspad">
+                <div class="col-md-3 abtustile">
+                    <p class="abtustilehead">+20</p>
+                    <p class="abtustileContent">Lorem ipsum</p>
+                </div>
+                <div class="col-md-3 abtustile">
+                    <p class="abtustilehead">7</p>
+                    <p class="abtustileContent">Lorem ipsum</p>
+                </div>
+                <div class="col-md-3 abtustile">
+                    <p class="abtustilehead">2010</p>
+                    <p class="abtustileContent">Lorem ipsum</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="abtustilehead">115</p>
+                    <p class="abtustileContent">Lorem ipsum</p>
+                </div>
+            </div>
+        </div>
+      </div><!--End of about us-->
+      <div id="features">
+        <div class="container">
+            <p class="contenthead">Features</p>
+            <hr class="contenthr">
+            <div class="row featurepad">
+                <div class="col-sm-4">
+                    <div class="feature">
+                        <div id="feature1"></div>
+                    </div>
+                    <p class="contentFeatures"><br> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
+                </div>
+                <div class="col-sm-4">
+                    <div class="feature">
+                        <div id="feature2"></div>
+                    </div>
+                    <p class="contentFeatures"><br> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
+                </div>
+                <div class="col-sm-4">
+                    <div class="feature">
+                        <div id="feature3"></div>
+                    </div>
+                    <p class="contentFeatures"><br> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
+                </div>
+            </div>
+        </div>
+    </div><!--End of features-->
+    <div id="latestNews"  style="margin-top: 50px; margin-bottom: 50px;">
+        <div class="container">
+            <p class="contenthead">Latest News</p>
+            <hr class="contenthr">
+            <div class="row latestnewstyling">
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem; box-shadow: 3px 3px 3px #0864B133;">
+                        <img src="/images/news1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</p>
+                          <a href=""style="color: #0864B1; float : right">Read <i class="fas fa-chevron-right" style="color: #0864B1;"></i></a>
+
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;box-shadow: 3px 3px 3px#0864B133;">
+                        <img src="/images/news2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</p>
+                          <a href=""style="color: #0864B1; float : right">Read <i class="fas fa-chevron-right" style="color: #0864B1;"></i></a>
+
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;box-shadow: 3px 3px 3px #0864B133;">
+                        <img src="/images/news3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</p>
+                          <a href=""style="color: #0864B1; float : right">Read <i class="fas fa-chevron-right" style="color: #0864B1;"></i></a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div><!--End of latest news-->
+   <div class="testimonials" style="margin-top: 50px;">
+    <div class="container" style="padding-top: 50px;">
+        <p class="contenthead">Testinomials</p>
+        <hr class="contenthr">
+        <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel"  style="padding-bottom: 50px; padding-top: 100px;">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-interval="10000">
+                    <div class="d-block w-60 testimonial">
+                    <p class="testimonial1"><i class="fas fa-quote-right" style="color: #0864B1;float: right;"><br></i> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. <br> <i class="fas fa-quote-left" style="float: left; color: #0864B1;"></i></p>
+                    <br>
+                    <p class="author">- Lorem ipsum dolor</p>
+                    <p class="auth2">Labore et dolore</p>
+                </div>                    
+              </div>
+              <div class="carousel-item" data-interval="2000">
+                <div class="d-block w-60 testimonial">
+                    <p class="testimonial1"><i class="fas fa-quote-right" style="color: #0864B1;float: right;"><br></i> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. <br> <i class="fas fa-quote-left" style="float: left; color: #0864B1;"></i></p>
+                    <br>
+                    <p class="author">- Lorem ipsum dolor</p>
+                    <p class="auth2">Labore et dolore</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-block w-60 testimonial">
+                    <p class="testimonial1"><i class="fas fa-quote-right" style="color: #0864B1;float: right;"><br></i> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. <br> <i class="fas fa-quote-left" style="float: left; color: #0864B1;"></i></p>
+                    <br>
+                    <p class="author">- Lorem ipsum dolor</p>
+                    <p class="auth2">Labore et dolore</p>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev"><i class="fas fa-chevron-left" style="font-size:80px; font-weight: bold; color: #67676726;"></i>
+              <span class="carousel-control-prev-icon" aria-hidden="true"  style=" left: 20px"></span>
+              <span class="sr-only" style="size: 50px;">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next"><i class="fas fa-chevron-right" style="font-size:80px; font-weight: bold ;color: #67676726;"></i>
+              <span class="carousel-control-next-icon" aria-hidden="true" style="right:20px"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+    </div><!--End of testinomials-->
+    <div class="newsletter">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="newsletterhead">Join our <br>
+                    newsletter to stay <br>
+                    updated</p>
+                </div>
+                <div class="col-md-6">
+                    <form>
+                        <input type="text" placeholder="   Your email address" class="inputnewsletter">
+                        <button type="submit" class="newsletterbutton">Join Newsletter</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div><!--End of newsletter-->
+    <div id="contactus">
+        <div class="container">
+            <p class="contenthead">Contact Us</p>
+            <hr class="contenthr">
+            <form id="usrform" onsubmit="return validateform();" action="#contactus">
+                <div class="form-row" style="margin-top: 100px;">
+                    <div class="form-group col-md-6">
+                        <label for="first-name" class="formhead">First Name</label>
+                        <input type="text" class="form-control contactusinput" id="first-name" style="box-shadow: 3px 3px 3px #888888;">
+                        <label id="invalidfname" style="color: red; visibility: hidden;">Please enter first name</label>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="last-name" class="formhead">Last Name</label>
+                        <input type="text" class="form-control contactusinput" id="last-name"  style="box-shadow: 3px 3px 3px #888888;">
+                        <label id="invalidlname" style="color: red; visibility: hidden;">Please enter last name</label>
+                    </div>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="subject" class="formhead ">Subject</label>
+                    <input type="text" class="form-control contactusinput" id="subject"  style="box-shadow: 3px 3px 3px #888888;">
+                    <label id="invalidsubject" style="color: red; visibility: hidden;">Please enter subject</label>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="message" class="formhead">Message</label> <br>
+                    <textarea rows="4" cols="50" name="comment" form="usrform" id="message" class="form-control"  style="box-shadow: 3px 3px 3px #888888;"></textarea>
+                    <label id="invalidmessage" style="color: red; visibility: hidden;">Please enter message</label>
+                </div>
+                <button type="reset" value="clear" class="btnreset">Empty Fills</button> <button type="submit" class="btnsubmit">Send Message <i class="fas fa-paper-plane" style="color: #fff;"></i></button>
+            </form>
+        </div>
+    </div><!--End of contact us-->
+    <div class="footer">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-lg-5">
+              <div class="footerhead">BlueTrading</div>
+            </div>
+            <div class="col-lg-5">
+              <div class="footeraddress">Keas 69 Str. 15234, East Nile <br> Athens, Greece <br> +249 9123 456 78  <br>+249 9123 456 78 </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 footercon">
+          <p class="footerConnected">Stay connected with</p>
+          <br><br>
+          <p>
+            <a href=""><i class="fab fa-youtube-square footerSM1"></i></a>
+            <a href=""><i class="fab fa-linkedin footerSM"></i></a>
+            <a href=""><i class="fab fa-instagram-square footerSM"></i></a>
+            <a href=""><i class="fab fa-twitter-square footerSM"></i></a>
+            <a href=""><i class="fab fa-facebook-square footerSM"></i></a>
+          </p> <br><br>
+          <p class="madeby">Made with <i class="far fa-heart" style="color: #fff;"></i> by Vishal Patil</p>
+          <br><br>
+          
+          <a href="https://www.linkedin.com/in/vishal-g-patil/"><p class="url">https://www.linkedin.com/in/vishal-g-patil/</p></a>
+        </div>
+
+      </div>
+      <div class="footercopy"> &copy; 2020 Reserved by BlueTrading Company Limited.</div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
